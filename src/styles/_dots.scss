@@ -1,0 +1,21 @@
+.dots {
+  position: absolute;
+  top: 43%;
+  right: -25px;
+  transform: rotate(90deg);
+}
+
+.dot {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  background: transparent;
+  border: 2px solid $color;
+  border-radius: 50%;
+  margin: 0 18px;
+
+  &:first-child {
+    background: $color;
+    margin-left: 0;
+  }
+}
