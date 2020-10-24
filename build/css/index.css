@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.right-strip, .left-strip, .right, .left {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  background: #363a5d;
+}
+
+.right {
+  left: 50%;
+  background: #d3d9dd;
+}
+
+.left-strip {
+  width: 1px;
+  height: 100vh;
+  background: #fff;
+  left: 120px;
+  opacity: 0.5;
+}
+
+.right-strip {
+  width: 1px;
+  height: 100vh;
+  background: #fff;
+  right: 120px;
+  opacity: 0.5;
+}
+
+.categories, .bag, .search, .menu, .logo {
+  position: absolute;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+
+.logo {
+  left: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.logo .reg {
+  font-size: 14px;
+  vertical-align: super;
+}
+
+.menu {
+  left: 150px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.search, .bag {
+  background: #fff;
+  color: #363a5d;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  margin-top: 18px;
+  right: 180px;
+}
+
+.bag {
+  right: 40px;
+}
+
+.categories {
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background: #fff;
+  color: #363a5d;
+  font-weight: 500;
+}
+.categories ul {
+  list-style: none;
+}
+.categories ul li {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.media {
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  transform: rotate(-90deg);
+}
+.media ul {
+  list-style: none;
+}
+.media ul li {
+  display: inline-block;
+  font-weight: 500;
+}
+.media ul li:not(:last-child) {
+  padding-right: 60px;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(-50%, -46%);
+  }
+  50% {
+    transform: translate(-50%, -54%);
+  }
+  100% {
+    transform: translate(-50%, -46%);
+  }
+}
+.product-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  max-width: 100%;
+  transform: translate(-50%, -40%);
+  animation: fly 4s ease-in-out infinite;
+}
+
+.product-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.product-title {
+  font-size: 100px;
+}
+.product-title::after {
+  content: ".";
+  color: #363a5d;
+}
+
+.product-subtitle {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.size {
+  position: absolute;
+  left: 150px;
+  bottom: 20px;
+}
+.size ul {
+  list-style: none;
+}
+.size ul li {
+  display: inline-block;
+  font-weight: 500;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 1.5;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.size ul li:hover {
+  background: #fff;
+  color: #363a5d;
+}
+.size ul span {
+  font-weight: 500;
+}
+.size ul span::after {
+  display: inline-block;
+  content: "";
+  border: 0.5px solid #fff;
+  opacity: 0.5;
+  width: 50px;
+  margin: 0 0 0 10px;
+  transform: translateY(-4px);
+}
+
+.dots {
+  position: absolute;
+  top: 43%;
+  right: -25px;
+  transform: rotate(90deg);
+}
+
+.dot {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  background: transparent;
+  border: 2px solid #363a5d;
+  border-radius: 50%;
+  margin: 0 18px;
+}
+.dot:first-child {
+  background: #363a5d;
+  margin-left: 0;
+}
+
+.bottomnav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.bottomnav ul {
+  list-style: none;
+}
+.bottomnav ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 20px 20px 20px 0;
+  background: #363a5d;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.bottomnav ul li:hover {
+  background: #fff;
+  color: #363a5d;
+}
+
+.bottomnav-img {
+  background: url("/src/assets/levi-shirt.jpg") no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 250px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=index.css.map */

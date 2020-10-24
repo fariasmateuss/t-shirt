@@ -1,0 +1,17 @@
+$primary-color: #fff;
+$color: #363a5d;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: $primary-color;
+  overflow: hidden;
+}
