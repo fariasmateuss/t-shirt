@@ -1,0 +1,37 @@
+$color-left: #363a5d;
+$color-right: #d3d9dd;
+
+%proportion {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  @extend %proportion;
+  background: $color-left;
+}
+
+.right {
+  @extend %proportion;
+  left: 50%;
+  background: $color-right;
+}
+
+.left-strip {
+  @extend %proportion;
+  width: 1px;
+  height: 100vh;
+  background: $primary-color;
+  left: 120px;
+  opacity: 0.5;
+}
+
+.right-strip {
+  @extend %proportion;
+  width: 1px;
+  height: 100vh;
+  background: $primary-color;
+  right: 120px;
+  opacity: 0.5;
+}
