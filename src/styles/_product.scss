@@ -1,0 +1,45 @@
+@mixin centralize {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(-50%, -46%);
+  }
+  50% {
+    transform: translate(-50%, -54%);
+  }
+  100% {
+    transform: translate(-50%, -46%);
+  }
+}
+
+.product-img {
+  @include centralize;
+  width: 500px;
+  max-width: 100%;
+  transform: translate(-50%, -40%);
+  animation: fly 4s ease-in-out infinite;
+}
+
+.product-text {
+  @include centralize;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.product-title {
+  font-size: 100px;
+
+  &::after {
+    content: ".";
+    color: $color;
+  }
+}
+
+.product-subtitle {
+  font-size: 25px;
+  font-weight: 500;
+}
