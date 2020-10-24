@@ -1,0 +1,32 @@
+.bottomnav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 20px 20px 20px 0;
+      background: $color;
+      color: $primary-color;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background: $primary-color;
+        color: $color;
+      }
+    }
+  }
+}
+
+.bottomnav-img {
+  background: url("/src/assets/levi-shirt.jpg") no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 250px;
+  height: 150px;
+}
