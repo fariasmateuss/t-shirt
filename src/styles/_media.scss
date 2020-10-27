@@ -10,6 +10,7 @@
     li {
       display: inline-block;
       font-weight: 500;
+      cursor: pointer;
 
       &:not(:last-child) {
         padding-right: 60px;
