@@ -1,4 +1,4 @@
-<img src=".github/thumbnail.png">
+<img src="./docs/resources/thumbnail.png">
 
 ## Design Credit
 
@@ -20,9 +20,9 @@ git clone https://github.com/fariasmateuss/t-shirt.git
 npm install -g sass
 ```
 
-### Preprocessing 
+### Preprocessing
 
-When you install Sass on the command line, you'll be able to run the sass executable to compile .sass and .scss files to .css files. 
+When you install Sass on the command line, you'll be able to run the sass executable to compile .sass and .scss files to .css files.
 
 ```
 sass --watch src/styles/index.scss build/css/index.css
@@ -30,9 +30,9 @@ sass --watch src/styles/index.scss build/css/index.css
 
 ### Serve website
 
-I used the package `serve` to run it in the browser through a node server. 
+I used the package `serve` to run it in the browser through a node server.
 
-> Node.js is required. 
+> Node.js is required.
 
 ```
   npx serve .
